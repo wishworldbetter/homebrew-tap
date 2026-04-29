@@ -5,20 +5,20 @@
 class SeedexCli < Formula
   desc "Seedex CLI — relay sync daemon for the Seedex desktop bridge"
   homepage "https://github.com/wishworldbetter/seedex"
-  version "0.1.3"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.3/seedex-cli_darwin_amd64.tar.gz"
-      sha256 "df65a19bb772e8ea4d5ea8a29cb9f1eee219f3964cfa3303900e813d91cfa90e"
+      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.4/seedex-cli_darwin_amd64.tar.gz"
+      sha256 "06053c59fe155615b9902b1bdbb0b9a8497a52a3a1b7d6ba34292513fb615bc8"
 
       define_method(:install) do
         bin.install "seedex-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.3/seedex-cli_darwin_arm64.tar.gz"
-      sha256 "c23c5234a1572c35a63c2b5caaa15c3d665049d57286ec1d53510be45b346fe5"
+      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.4/seedex-cli_darwin_arm64.tar.gz"
+      sha256 "ba1298757315868d503aa73132e4a4b6a7109349a24c96f4b0f10952a5b0bff5"
 
       define_method(:install) do
         bin.install "seedex-cli"
@@ -28,15 +28,15 @@ class SeedexCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.3/seedex-cli_linux_amd64.tar.gz"
-      sha256 "807c6f0836f902828a2ab292b1454fbe7eed8635395ea433c1de1a50b785aea8"
+      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.4/seedex-cli_linux_amd64.tar.gz"
+      sha256 "0279a9ccd79970c44a625977e1d8f6ee83355e292a472d381ca0306e4caad0c5"
       define_method(:install) do
         bin.install "seedex-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.3/seedex-cli_linux_arm64.tar.gz"
-      sha256 "bebaa1f4f1a24b5d1f77f257ae227ece80c14fc413ee6289c01964b5649b2b56"
+      url "https://github.com/wishworldbetter/seedex/releases/download/v0.1.4/seedex-cli_linux_arm64.tar.gz"
+      sha256 "39e15917ac11840a733c4a690e442fd1183c2697d825846c761930ff354ec457"
       define_method(:install) do
         bin.install "seedex-cli"
       end
